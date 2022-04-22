@@ -1,6 +1,8 @@
 # JCOM theme
 
-A graphical theme for Janeway
+A graphical theme for Janeway.
+
+Derived from theme "material".
 
 ## Install
 
