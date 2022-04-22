@@ -1,0 +1,17 @@
+{% extends "core/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Edit Profile" %}{% endblock title %}
+
+{% block css %}
+    {% include "common/elements/edit_profile_css_block.html" %}
+{% endblock %}
+
+{% block body %}
+    ciao bel
+    {{ form  }}
+{% endblock body %}
+
+{% block js %}
+    {% include "common/elements/edit_profile_js_block.html" %}
+{% endblock %}
