@@ -1,4 +1,7 @@
 {% extends "core/base.html" %}
+{% load foundation %}
+{% load bootstrap4 %}
+{% load static %}
 {% load i18n %}
 
 {% block title %}{% trans "Edit Profile" %}{% endblock title %}
@@ -8,8 +11,26 @@
 {% endblock %}
 
 {% block body %}
-    ciao bel
-    {{ form  }}
+    ciao
+<div class="row">
+    <div class="col m3">
+        {% bootstrap_field form.salutation %}
+    </div>
+    <div class="col m3">
+        {% bootstrap_field form.first_name %}
+    </div>
+    <div class="col m3">
+        {% bootstrap_field form.middle_name %}
+    </div>
+    <div class="col m3">
+        {% bootstrap_field form.last_name %}
+    </div>
+</div>
+<div class="row">
+    <div class="col m3">
+        {% bootstrap_field form.profession %}
+    </div>
+</div>
 {% endblock body %}
 
 {% block js %}
